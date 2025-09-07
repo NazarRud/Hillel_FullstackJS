@@ -1,0 +1,130 @@
+body {
+    background-color: #fcfcfc;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-size: 16px;
+}
+
+/* Menu */
+.menu {
+    background-color: #f4f4f4;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 1px solid #dedbdb;
+}
+
+.inline-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.inline-list li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+/* Content */
+.content {
+    width: 900px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.header {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 35px;
+}
+
+/* Card */
+.card {
+    width: 100%;
+    border: 1px solid #dddddd;
+    border-radius: 15px;
+    overflow: hidden;
+    background: #fff;
+    margin-bottom: 15px;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    margin: 0 0 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #dedbdb;
+}
+
+.card-text {
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+
+/* Form */
+fieldset {
+    border: 1px solid #dedbdb;
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+legend {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="url"],
+input[type="number"],
+input[type="date"],
+input[type="time"],
+input[type="file"],
+input[type="datetime-local"],
+input[list],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #dedbdb;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+input[type="checkbox"],
+input[type="radio"],
+input[type="color"] {
+    margin-bottom: 15px;
+}
+
+input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Utility */
+.text-center {
+    text-align: center;
+}
+
+.hr-margin {
+    margin: 25px;
+}
