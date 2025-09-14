@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fcfcfc;
+    height: 100vh;
+    font-size: 16px;
+}
+
+.header {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 35px;
+}
+
+.content {
+    width: 900px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.card {
+    width: 100%;
+    border: 1px solid #dddddd;
+    border-radius: 15px;
+    overflow: hidden;
+    background: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+/* Селектори CSS */
+p {
+    color: red;
+}
+
+.text-green {
+    color: green;
+}
+
+#box-blue {
+    color: blue;
+}
+
+input[type="text"] {
+    color: orange;
+}
+
+p strong {
+    color: purple;
+}
+
+ul > li {
+    color: brown;
+}
+
+span + p {
+    color: pink;
+}
+
+p.note {
+    color: gray;
+}
+
+p#unique {
+    color: aquamarine;
+}
+
+a[href="#"] {
+    color: darkslategrey;
+}
+
+div.container div.highlight {
+    color: goldenrod;
+}
+
+div.container > button[type="submit"].btn-send {
+    color: blue;
+}
