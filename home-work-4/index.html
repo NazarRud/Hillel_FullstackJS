@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/main.css" />
+        <title>Домашнє завдання №4</title>
+    </head>
+    <body>
+        <div class="content">
+            <h1 class="header">Селектори CSS, специфічність селекторів</h1>
+
+            <div class="card">
+                <p>Селектор тегу p, вага 1</p>
+            </div>
+
+            <div class="card">
+                <span class="text-green"> Селектор .text-green, вага 10</span>
+            </div>
+
+            <div class="card">
+                <div id="box-blue">Селектор #box-blue, вага 100</div>
+            </div>
+
+            <div class="card">
+                <input
+                    type="text"
+                    name="name"
+                    value="Селектор атрибуту, вага 10"
+                />
+            </div>
+
+            <div class="card">
+                <p>
+                    <strong>Вкладений селектор p strong, вага 2</strong>
+                </p>
+            </div>
+
+            <div class="card">
+                <ul>
+                    <li>Дочірній селектор ul > li, вага 2</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <p></p>
+                <span></span>
+                <p>Перший послідовний селектор span + p, вага 2</p>
+                <p></p>
+            </div>
+
+            <div class="card">
+                <p class="note">Селектор p.note, вага 11</p>
+            </div>
+
+            <div class="card">
+                <p id="unique">Селектор p#unique, вага 101</p>
+            </div>
+
+            <div class="card">
+                <a href="#">Селектор a[href="#"], вага 11</a>
+            </div>
+
+            <div class="card">
+                <div>
+                    <div class="highlight">
+                        Селектор div div.highlight, вага 12
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="container">
+                    <button class="btn-send" type="submit">
+                        Селектор div.container > button[type="submit"].btn-send, вага 32
+                    </button>
+                </div>
+            </div>
+
+            <div class="card">
+                <p style="color: lightblue;">inline styles, вага 1001</p>
+            </div>
+        </div>
+    </body>
+</html>
