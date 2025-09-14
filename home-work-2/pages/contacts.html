@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Домашнє завдання №2</title>
+    </head>
+    <body>
+        <div id="menu">
+            <ul>
+                <li><a href="../index.html">Головна</a></li>
+                <li><a href="./gallery.html">Галерея</a></li>
+                <li><a href="./contacts.html">&gt; Контакти &lt;</a></li>
+                <li><a href="./about.html">Про нас</a></li>
+                <li>
+                    <a href="./articles.html">Статті</a>
+                    <ol>
+                        <li>
+                            <a href="./articles.html#section1">Розділ 1</a>
+                        </li>
+                        <li>
+                            <a href="./articles.html#section2">Розділ 2</a>
+                        </li>
+                        <li>
+                            <a href="./articles.html#section3">Розділ 3</a>
+                        </li>
+                    </ol>
+                </li>
+            </ul>
+        </div>
+        <div id="content">
+            <h1>Контакти</h1>
+            <h2>Форма для заповнення</h2>
+            <form action="./contacts.html" method="post" enctype="multipart/form-data">
+                <fieldset>
+                    <legend>Основна інформація</legend>
+                    <div>
+                        <label for="name">Ім'я:</label>
+                        <input type="text" id="name" name="name" placeholder="Введіть ваше ім'я" required />
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="example@gmail.com" required />
+                    </div>
+                    <div>
+                        <label for="password">Пароль:</label>
+                        <input type="password" id="password" name="password" required />
+                    </div>
+                    <div>
+                        <label for="message">Повідомлення:</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Введіть ваше повідомлення"></textarea>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Контактна інформація</legend>
+                    <div>
+                        <label for="phone">Телефон:</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+380XXXXXXXXX" required />
+                    </div>
+                    <div>
+                        <label for="website">Ваш сайт:</label>
+                        <input type="url" id="website" name="website" placeholder="https://..." />
+                    </div>
+                    <div>
+                        <label for="address">Адреса:</label>
+                        <textarea id="address" name="address" rows="4" placeholder="Введіть вашу адресу"></textarea>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Особиста інформація</legend>
+                    <div>
+                        <label for="age">Вік:</label>
+                        <input type="number" id="age" name="age" min="18" max="120" />
+                    </div>
+                    <div>
+                        <label for="birthdate">Дата народження:</label>
+                        <input type="date" id="birthdate" name="birthdate" />
+                    </div>
+                    <div>
+                        <p>Стать:</p>
+                        <label><input type="radio" name="gender" value="male" /> Чоловік</label>
+                        <label><input type="radio" name="gender" value="female" /> Жінка</label>
+                        <label><input type="radio" name="gender" value="other" /> Інше</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Додаткова інформація</legend>
+                    <div>
+                        <p>Які канали комунікації вам зручні?</p>
+                        <label><input type="checkbox" name="contact[]" value="email" /> Email</label>
+                        <label><input type="checkbox" name="contact[]" value="phone" /> Телефон</label>
+                        <label><input type="checkbox" name="contact[]" value="telegram" /> Telegram</label>
+                    </div>
+
+                    <div>
+                        <label for="time">Зручний час для дзвінка:</label>
+                        <input type="time" id="time" name="time" />
+                    </div>
+                    <div>
+                        <label for="datetime">Дата і час зустрічі:</label>
+                        <input type="datetime-local" id="datetime" name="datetime" />
+                    </div>
+                    <div>
+                        <label for="color">Улюблений колір:</label>
+                        <input type="color" id="color" name="color" value="#ff0000" />
+                    </div>
+                    <div>
+                        <label for="resume">Завантажити файл:</label>
+                        <input type="file" id="resume" name="resume" />
+                    </div>
+                    <div>
+                        <label for="country">Країна:</label>
+                        <input list="countries" id="country" name="country" placeholder="Введіть країну" />
+                        <datalist id="countries">
+                            <option value="Україна"></option>
+                            <option value="Польща"></option>
+                            <option value="Німеччина"></option>
+                            <option value="США"></option>
+                        </datalist>
+                    </div>
+                    <div>
+                        <label for="city">Місто:</label>
+                        <select id="city" name="city">
+                            <option value="">Оберіть місто</option>
+                            <option value="kyiv">Київ</option>
+                            <option value="lviv">Львів</option>
+                            <option value="odesa">Одеса</option>
+                        </select>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Зворотній зв'язок:</legend>
+                    <div>
+                        <label for="satisfaction">Рівень задоволеності (1-10):</label>
+                        <input type="range" id="satisfaction" name="satisfaction" min="1" max="10" />
+                    </div>
+                </fieldset>
+                <div>
+                    <input type="submit" value="Відправити" />
+                </div>
+            </form> 
+        </div>
+    </body>
+</html>
