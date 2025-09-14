@@ -45,7 +45,7 @@ p {
     color: blue;
 }
 
-input[type="text"] {
+[type="text"] {
     color: orange;
 }
 
@@ -73,7 +73,7 @@ a[href="#"] {
     color: darkslategrey;
 }
 
-div.container div.highlight {
+div div.highlight {
     color: goldenrod;
 }
 
