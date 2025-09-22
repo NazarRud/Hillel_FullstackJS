@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="../css/main.css" />
+        <style>
+            .example {
+                position: relative;
+            }
+
+            .box {
+                width: 250px;
+                height: 120px;
+                color: white;
+                font-weight: bold;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .static {
+                background: blue;
+                position: static;
+            }
+
+            .relative {
+                background: green;
+                position: relative;
+                top: 20px;
+                left: 20px;
+            }
+
+            .absolute {
+                background: orange;
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 120px;
+                height: 50px;
+                text-align: center;
+            }
+
+            .fixed {
+                background: steelblue;
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+            }
+
+            .sticky {
+                background: red;
+                position: sticky;
+                top: 10px;
+                width: 100%;
+            }
+
+            .height {
+                height: 2000px;
+            }
+        </style>
+
+        <title>Домашнє завдання №7</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="../index.html">Головна</a>
+                <a href="./page-2.html">Завдання [2]</a>
+                <a href="./page-3-1.html">Завдання [3.1]</a>
+                <a href="./page-3-2.html">Завдання [3.2]</a>
+                <a href="./page-4.html">Завдання [4]</a>
+                <a href="./page-5.html">Завдання [5]</a>
+                <a href="./page-6.html">Завдання [6]</a>
+                <a href="./page-7.html" class="active">Завдання [7]</a>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <div class="card">
+                    <div class="text-center">
+                        <h1>Позиціонування елементів</h1>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="card">
+                    <div class="example">
+                        <p class="text-center font-bold">
+                            1. static (за замовчуванням)
+                        </p>
+                        <div class="box static">static</div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="card">
+                    <div class="example">
+                        <p class="text-center font-bold">2. relative</p>
+                        <div class="box relative">
+                            relative (зсунуто на 20px)
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="card">
+                    <div class="example">
+                        <p class="text-center font-bold">
+                            3. absolute (всередині relative)
+                        </p>
+                        <div class="box relative">
+                            Це контейнер relative
+                            <div class="absolute">absolute (правий верх)</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="example">
+                <div class="card">
+                    <div class="example">
+                        <p class="text-center font-bold">4. fixed</p>
+                        <p>
+                            Синій блок у правому нижньому куті завжди на екрані,
+                            навіть при прокрутці.
+                        </p>
+                        <div class="box fixed">fixed</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="example height">
+                <div class="card">
+                    <p class="text-center font-bold">5. sticky</p>
+                    <p>
+                        Червоний блок "прилипає" у верхній частині екрана, поки
+                        не закінчиться секція.
+                    </p>
+                    <p>Прокрутіть вниз, щоб побачити ефект.</p>
+                </div>
+                <div class="box sticky">sticky</div>
+            </section>
+        </main>
+    </body>
+</html>

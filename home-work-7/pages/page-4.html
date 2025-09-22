@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="../css/main.css" />
+        <style>
+            /* display */
+            .box {
+                border: 2px solid #333;
+                background: lightblue;
+                padding: 10px;
+                margin: 15px;
+            }
+
+            .block {
+                display: block;
+            }
+
+            .inline {
+                display: inline;
+            }
+
+            .flex {
+                display: flex;
+                gap: 5px;
+            }
+
+            .flex .item {
+                background: red;
+                padding: 5px 10px;
+            }
+
+            /* box-sizing */
+            .sizing-container {
+                display: flex;
+                gap: 20px;
+                margin: 15px 0;
+            }
+
+            .sizing {
+                width: 300px;
+                padding: 20px;
+                border: 5px solid teal;
+                background: lightgreen;
+            }
+
+            .content-box {
+                box-sizing: content-box;
+            }
+
+            .border-box {
+                box-sizing: border-box;
+            }
+        </style>
+        
+        <title>Домашнє завдання №7</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="../index.html">Головна</a>
+                <a href="./page-2.html">Завдання [2]</a>
+                <a href="./page-3-1.html">Завдання [3.1]</a>
+                <a href="./page-3-2.html">Завдання [3.2]</a>
+                <a href="./page-4.html" class="active">Завдання [4]</a>
+                <a href="./page-5.html">Завдання [5]</a>
+                <a href="./page-6.html">Завдання [6]</a>
+                <a href="./page-7.html">Завдання [7]</a>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <div class="card">
+                    <div class="text-center">
+                        <h1>Вивчення CSS властивостей</h1>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="card">
+                    <p class="text-center">
+                        <strong>Властивість display</strong>
+                    </p>
+
+                    <div class="box block">display: block</div>
+                    <span class="box inline">display: inline</span>
+                    <span class="box inline">display: inline</span>
+                    <div class="box flex">
+                        display: flex
+                        <div class="item">A</div>
+                        <div class="item">B</div>
+                        <div class="item">C</div>
+                        <div class="item">D</div>
+                        <div class="item">E</div>
+                        <div class="item">F</div>
+                        <div class="item">G</div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="card">
+                    <p class="text-center">
+                        <strong>Властивість box-sizing</strong>
+                    </p>
+
+                    <div class="sizing-container">
+                        <div class="sizing content-box">
+                            width: 150px content-box
+                        </div>
+                        <div class="sizing border-box">
+                            width: 150px border-box
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
