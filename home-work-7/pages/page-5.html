@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="../css/main.css" />
+        <style>
+            .box {
+                width: 120px;
+                height: 120px;
+                margin: 10px;
+                color: white;
+                text-align: center;
+                padding-top: 20px;
+                font-weight: bold;
+            }
+
+            .float-left {
+                float: left;
+                background: blue;
+            }
+
+            .float-right {
+                float: right;
+                background: green;
+            }
+
+            .clear-both {
+                clear: both;
+                background: red;
+                padding: 10px;
+            }
+
+            .clear-left {
+                clear: left;
+                background: yellow;
+                padding: 10px;
+            }
+        </style>
+
+        <title>Домашнє завдання №7</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="../index.html">Головна</a>
+                <a href="./page-2.html">Завдання [2]</a>
+                <a href="./page-3-1.html">Завдання [3.1]</a>
+                <a href="./page-3-2.html">Завдання [3.2]</a>
+                <a href="./page-4.html">Завдання [4]</a>
+                <a href="./page-5.html" class="active">Завдання [5]</a>
+                <a href="./page-6.html">Завдання [6]</a>
+                <a href="./page-7.html">Завдання [7]</a>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <div class="card">
+                    <div class="text-center">
+                        <h1>Практика з float та clear</h1>
+                    </div>
+                </div>
+            </section>
+            
+            <section>
+                <div class="card">
+                    <div class="box float-left">
+                        Ліворуч<br>(float: left)
+                    </div>
+                    <div class="box float-right">
+                        Праворуч<br>(float: right)
+                    </div>
+                    <p>
+                        Це абзац тексту, який обтікає елементи з float. Текст
+                        розташовується навколо синього та зеленого блоків.
+                    </p>
+                </div>
+            </section>
+
+            <section>
+                <div class="card">
+                    <div class="box float-left">
+                        Ліворуч<br>(float: left)
+                    </div>
+                    <p class="clear-both">
+                        clear: both; починається нижче всіх плаваючих елементів.
+                    </p>
+                </div>
+            </section>
+
+            <section>
+                <div class="card">
+                    <div class="box float-right">
+                        Праворуч<br>(float: right)
+                    </div>
+                    <p class="clear-both">
+                        clear: both; починається нижче всіх плаваючих елементів.
+                    </p>
+                </div>
+            </section>
+
+            </section>
+        </main>
+    </body>
+</html>
