@@ -1,0 +1,269 @@
+:root {
+    --blue: #34547a;
+    --grey-light: #eeeff1;
+    --grey-dark: #727272;
+    --white: #ffffff;
+    --black: #000000;
+    --font-size: 16px;
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-style: normal;
+    src: url("./fonts/Roboto/Regular/Roboto-Regular.eot"),
+        url("./fonts/Roboto/Regular/Roboto-Regular.woff2") format("woff2"),
+        url("./fonts/Roboto/Regular/Roboto-Regular.woff") format("woff"),
+        url("./fonts/Roboto/Regular/Roboto-Regular.ttf") format("truetype"),
+        url("./fonts/Roboto/Regular/Roboto-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-weight: 500;
+    font-style: normal;
+    src: url("./fonts/Roboto/Medium/Roboto-Medium.eot"),
+        url("./fonts/Roboto/Medium/Roboto-Medium.woff2") format("woff2"),
+        url("./fonts/Roboto/Medium/Roboto-Medium.woff") format("woff"),
+        url("./fonts/Roboto/Medium/Roboto-Medium.ttf") format("truetype"),
+        url("./fonts/Roboto/Medium/Roboto-Medium.otf") format("opentype");
+}
+
+/* -- Reset -- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* -- Normalize -- */
+html {
+    font-size: var(--font-size);
+    font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 500;
+}
+
+h1 {
+    line-height: 1.64;
+    font-size: 3rem;
+}
+
+h2 {
+    line-height: 1;
+    font-size: 2rem;
+}
+
+h3 {
+    line-height: 1;
+    font-size: 1.3125rem;
+}
+
+p {
+    line-height: 1.64;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    line-height: 1.64;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+/* -- Container -- */
+.container {
+    max-width: 1120px;
+    margin-inline: auto;
+}
+
+/* -- Utility -- */
+.description {
+    width: 540px;
+    color: var(--grey-dark);
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* -- Header Section -- */
+.header {
+    padding: 79px 0 141px 0;
+    background-color: var(--grey-light);
+}
+
+.header__title {
+    margin-top: 146px;
+    margin-bottom: 30px;
+    color: var(--black);
+}
+
+.header__description {
+}
+
+.header__btn {
+    width: 225px;
+    height: 65px;
+    margin-top: 56px;
+
+    background-color: var(--blue);
+
+    font-size: 1rem;
+    color: var(--white);
+    text-transform: uppercase;
+    letter-spacing: 1.6px;
+}
+
+/* -- Navigation Section -- */
+.navigation {
+    text-transform: uppercase;
+}
+
+.navigation__list {
+    display: flex;
+}
+
+.navigation__item {
+}
+
+.navigation__item--active .navigation__link {
+    color: var(--blue);
+}
+
+.navigation__item:first-child {
+    padding-right: 25px;
+}
+
+.navigation__item ~ .navigation__item {
+    padding: 0 25px;
+}
+
+.navigation__link {
+    letter-spacing: 1.6px;
+    color: var(--black);
+}
+
+/* -- About Section -- */
+.about-me {
+    padding: 112px 0 100px 0;
+}
+.about-me__title {
+    margin-bottom: 50px;
+    color: var(--black);
+}
+.about-me__description {
+    margin-inline: auto;
+}
+
+/* -- Project Section -- */
+.numbers {
+    padding: 100px 0 100px 0;
+    background-color: var(--blue);
+}
+
+.numbers__container {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 50px;
+    row-gap: 20px;
+    justify-content: space-evenly;
+}
+
+.project-card {
+    display: flex;
+}
+
+.project-card__info {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card__image {
+    width: 50px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.project-card__amount {
+    font-size: 1.3125rem;
+    font-weight: 500;
+    line-height: 1;
+    color: var(--white);
+}
+
+.project-card__name {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.64;
+    color: var(--white);
+}
+
+/* -- Video Section -- */
+.video {
+    padding: 100px 0 100px 0;
+}
+
+.video__title {
+    margin-bottom: 50px;
+    color: var(--black);
+}
+.video__description {
+    margin-inline: auto;
+}
+
+.video__img {
+    margin-top: 57px;
+    width: 1110px;
+    height: 600px;
+}
+
+.img {
+    position: relative;
+    background-size: contain;
+    background-image: url(../images/bg-image.png);
+}
+
+.img__play-button {
+    position: absolute;
+    top: 250px;
+    left: 505px;
+}
+
+/* -- Video Section -- */
+
+footer {
+    background-color: var(--blue);
+}
+
+.footer__container {
+    padding: 50px 0;
+}
+
+.footer__title {
+    font-size: 1.3125rem;
+    font-weight: 500;
+    line-height: 1;
+    color: var(--white);
+    margin-bottom: 20px;
+}
+
+.footer__sign {
+    font-size: 0.8125rem;
+    font-weight: 400;
+    line-height: 1.64;
+    color: var(--white);
+}
