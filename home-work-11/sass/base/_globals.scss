@@ -1,0 +1,48 @@
+@use "./variables" as *;
+
+html {
+    font-size: $font-size;
+    font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 500;
+}
+
+h1 {
+    line-height: 1.64;
+    font-size: 3rem;
+}
+
+h2 {
+    line-height: 1;
+    font-size: 2rem;
+}
+
+h3 {
+    line-height: 1;
+    font-size: 1.3125rem;
+}
+
+p {
+    line-height: 1.64;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    line-height: 1.64;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
