@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/main.css">
+        
+        <title>Домашнє завдання №11 (Рефакторинг "Simple Site" з використанням SCSS)</title>
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <nav class="navigation">
+                    <ul class="navigation__list">
+                        <li class="navigation__item navigation__item--active">
+                            <a href="#" class="navigation__link">Home</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="#" class="navigation__link">About</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="#" class="navigation__link">Works</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="#" class="navigation__link">Process</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="#" class="navigation__link">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+                <h1 class="header__title">Design and Layout</h1>
+                <p class="header__description description">
+                    Lorem Ipsum is a placeholder text commonly used in printing
+                    and web design. Lorem Ipsum has been the standard dummy text
+                    for Latin scripts since the 16th century.
+                </p>
+                <button class="header__btn">Write to me</button>
+            </div>
+        </header>
+        <main>
+            <section class="about-me">
+                <div class="container">
+                    <h2 class="about-me__title text-center">About Me</h2>
+                    <p class="about-me__description description text-center">
+                        Lorem Ipsum is a placeholder text commonly used in
+                        printing and web design. Lorem Ipsum has been the
+                        standard dummy text for Latin scripts since the 16th
+                        century.
+                    </p>
+                </div>
+            </section>
+            <section class="numbers">
+                <div class="numbers__container container">
+                    <div class="numbers__project-card project-card">
+                        <img
+                            src="./images/project.png"
+                            alt="Project"
+                            class="project-card__image"
+                        />
+                        <div class="project-card__info">
+                            <span class="project-card__amount">40+</span>
+                            <span class="project-card__name">projects</span>
+                        </div>
+                    </div>
+                    <div class="numbers__project-card project-card">
+                        <img
+                            src="./images/project.png"
+                            alt="Project"
+                            class="project-card__image"
+                        />
+                        <div class="project-card__info">
+                            <span class="project-card__amount">40+</span>
+                            <span class="project-card__name">projects</span>
+                        </div>
+                    </div>
+                    <div class="numbers__project-card project-card">
+                        <img
+                            src="./images/project.png"
+                            alt="Project"
+                            class="project-card__image"
+                        />
+                        <div class="project-card__info">
+                            <span class="project-card__amount">40+</span>
+                            <span class="project-card__name">projects</span>
+                        </div>
+                    </div>
+                    <div class="numbers__project-card project-card">
+                        <img
+                            src="./images/project.png"
+                            alt="Project"
+                            class="project-card__image"
+                        />
+                        <div class="project-card__info">
+                            <span class="project-card__amount">40+</span>
+                            <span class="project-card__name">projects</span>
+                        </div>
+                    </div>
+                    <div class="numbers__project-card project-card">
+                        <img
+                            src="./images/project.png"
+                            alt="Project"
+                            class="project-card__image"
+                        />
+                        <div class="project-card__info">
+                            <span class="project-card__amount">40+</span>
+                            <span class="project-card__name">projects</span>
+                        </div>
+                    </div>
+                    <div class="numbers__project-card project-card">
+                        <img
+                            src="./images/project.png"
+                            alt="Project"
+                            class="project-card__image"
+                        />
+                        <div class="project-card__info">
+                            <span class="project-card__amount">40+</span>
+                            <span class="project-card__name">projects</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="video">
+                <div class="container">
+                    <h2 class="video__title text-center">How I Work</h2>
+                    <p class="video__description description text-center">
+                        Lorem Ipsum is a placeholder text commonly used in
+                        printing and web design. Lorem Ipsum has been the
+                        standard dummy text for Latin scripts since the 16th
+                        century.
+                    </p>
+
+                    <div class="video__player player">
+                        <img
+                            src="./images/bg-image.png"
+                            alt="Preview video"
+                            class="player__preview"
+                        />
+                        <a href="#">
+                            <img
+                                class="player__button"
+                                src="./images/play-button.png"
+                                alt="Play video"
+                            />
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__container container">
+                <p class="footer__title">Ostap Ivanenko</p>
+                <span class="footer__sign"
+                    >&copy; 2025 All Rights Reserved.</span
+                >
+            </div>
+        </footer>
+    </body>
+</html>

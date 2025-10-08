@@ -1,0 +1,16 @@
+@use "sass:map";
+@use "./variables" as *;
+
+@mixin font-setting($size, $weight, $line-height) {
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $line-height;
+}
+
+@mixin media-down($key) {
+    $value: map.get($breakpoints, $key);
+
+    @media (max-width: $value) {
+        @content;
+    }
+}
