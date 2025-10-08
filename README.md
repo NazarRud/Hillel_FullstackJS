@@ -23,6 +23,7 @@
 - [Заняття 08](home-work-8/index.html)
 - [Заняття 09](home-work-9/index.html)
 - [Заняття 10](home-work-10/index.html)
+- [Заняття 11](home-work-11/index.html)
 
 ---
 
