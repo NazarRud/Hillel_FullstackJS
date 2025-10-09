@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #fcfcfc;
+    min-height: 100vh;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.card {
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px solid #dddddd;
+    border-radius: 15px;
+    overflow: hidden;
+    background: #fff;
+    margin-bottom: 15px;
+    padding: 15px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* 
+** SVG
+*/
+
+svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.shape {
+    stroke-width: 5px;
+}
+
+.square {
+    fill: #ffe8cc;
+    stroke: #ff6b00;
+}
+.rect {
+    fill: #e6f7ff;
+    stroke: #006dff;
+}
+.circle {
+    fill: #eaf7e9;
+    stroke: #19a974;
+}
+.ellipse {
+    fill: #f3e8ff;
+    stroke: #7a3cff;
+}
+
+/*
+** Animation color
+*/
+.square-animation-color {
+    animation: squareColorChange 4s ease-in-out infinite alternate;
+}
+
+@keyframes squareColorChange {
+    0% {
+        fill: #ffe8cc;
+        stroke: #ff6b00;
+    }
+    50% {
+        fill: #ffd6e7;
+        stroke: #ff0a54;
+    }
+    100% {
+        fill: #fff3bf;
+        stroke: #fab005;
+    }
+}
+
+.rect-animation-color {
+    animation: rectColorChange 4.5s ease-in-out infinite alternate;
+}
+
+@keyframes rectColorChange {
+    0% {
+        fill: #e6f7ff;
+        stroke: #006dff;
+    }
+    50% {
+        fill: #ccf3ff;
+        stroke: #00b4d8;
+    }
+    100% {
+        fill: #f1f2ff;
+        stroke: #5a189a;
+    }
+}
+
+.circle-animation-color {
+    animation: circleColorChange 5s ease-in-out infinite alternate;
+}
+
+@keyframes circleColorChange {
+    0% {
+        fill: #eaf7e9;
+        stroke: #19a974;
+    }
+    50% {
+        fill: #d2ffe8;
+        stroke: #00c49a;
+    }
+    100% {
+        fill: #fff3bf;
+        stroke: #ffd166;
+    }
+}
+
+.ellipse-animation-color {
+    animation: ellipseColorChange 6s ease-in-out infinite alternate;
+}
+
+@keyframes ellipseColorChange {
+    0% {
+        fill: #f3e8ff;
+        stroke: #7a3cff;
+    }
+    50% {
+        fill: #ffe1f0;
+        stroke: #e94057;
+    }
+    100% {
+        fill: #e8fff3;
+        stroke: #06d6a0;
+    }
+}
