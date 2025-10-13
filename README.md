@@ -25,6 +25,7 @@
 - [Заняття 10](home-work-10/index.html)
 - [Заняття 11](home-work-11/index.html)
 - [Заняття 13](home-work-13/index.html)
+- [Заняття 14](home-work-14/index.html)
 
 ---
 
