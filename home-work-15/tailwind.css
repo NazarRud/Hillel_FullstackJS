@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+@layer components {
+    .cell-style {
+        @apply border-5 border-black
+    }
+}
