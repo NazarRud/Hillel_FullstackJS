@@ -28,6 +28,7 @@
 - [Заняття 14](home-work-14/index.html)
 - [Заняття 15](home-work-15/index.html)
 - [Заняття 18](home-work-18/index.html)
+- [Заняття 19](home-work-19/index.html)
 
 ---
 
