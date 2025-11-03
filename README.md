@@ -29,7 +29,7 @@
 - [Заняття 15](home-work-15/index.html)
 - [Заняття 18](home-work-18/index.html)
 - [Заняття 19](home-work-19/index.html)
-- [Заняття 20](home-work-20/index.html)
+- [Заняття 20](home-work_20/index.html)
 
 ---
 
