@@ -31,6 +31,7 @@
 - [Заняття 19](home-work-19/index.html)
 - [Заняття 20](home-work-20/index.html)
 - [Заняття 21](home-work-21/index.html)
+- [Заняття 22](home-work-22/index.html)
 
 ---
 
