@@ -33,6 +33,7 @@
 - [Заняття 21](home-work-21/index.html)
 - [Заняття 22](home-work-22/index.html)
 - [Заняття 23](home-work-23/index.html)
+- [Заняття 24](home-work-24/index.html)
 
 ---
 
